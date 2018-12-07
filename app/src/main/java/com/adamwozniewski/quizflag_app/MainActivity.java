@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
 //    Klucze preferencji
 
-    public static final String CHOICES = "pref_numberofChoices";
+    public static final String CHOICES = "pref_numberOfChoices";
     public static final String REGIONS = "pref_regionsToInclude";
 
 //    Czy aplikacja została uruchomiona na telefonie?

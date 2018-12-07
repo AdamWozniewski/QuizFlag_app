@@ -37,15 +37,14 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/guess_country"
         android:textAppearance="@android:style/TextAppearance.Material.Medium" />
-    
+
     <LinearLayout
         android:id="@+id/row1LinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal" >
 
         <Button
-
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -64,11 +63,12 @@
             android:text="Button"
             android:textColor="@color/button_text_color" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/row2LinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal" >
 
         <Button
             style="@style/Widget.AppCompat.Button.Colored"
@@ -78,9 +78,7 @@
             android:lines="2"
             android:text="Button"
             android:textColor="@color/button_text_color" />
-
         <Button
-
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -89,12 +87,12 @@
             android:text="Button"
             android:textColor="@color/button_text_color" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/row3LinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal" >
         <Button
 
             style="@style/Widget.AppCompat.Button.Colored"
@@ -106,7 +104,6 @@
             android:textColor="@color/button_text_color" />
 
         <Button
-
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -115,6 +112,7 @@
             android:text="Button"
             android:textColor="@color/button_text_color" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/row4LinearLayout"
         android:layout_width="match_parent"
@@ -122,7 +120,6 @@
         android:orientation="horizontal">
 
         <Button
-
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -132,7 +129,6 @@
             android:textColor="@color/button_text_color" />
 
         <Button
-
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"

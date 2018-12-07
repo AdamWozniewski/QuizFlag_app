@@ -226,7 +226,7 @@ public class MainActivityFragment extends Fragment {
         this.answerTextView.setText("");
 
         // Wyświetlenie numeru bieżacego pytania
-        this.questionNumberTextView.setText(getString(R.string.question, (this.correctAnswers++), FLAG_IN_QUIZ));
+        this.questionNumberTextView.setText(getString(R.string.question, (this.correctAnswers + 1), FLAG_IN_QUIZ));
 
         // Pobieranie nazwy obszaru bieżącej flagi
         String region = nextImage.substring(0, nextImage.indexOf("-"));
@@ -246,7 +246,7 @@ public class MainActivityFragment extends Fragment {
             // Animacja wejścia flagi na ekran
             this.animate(false);
         } catch (IOException e) {
-            Log.e(TAG, "błąd podczas ładowania", e);
+            Log.e(TAG, "błąd podczas ładowania" + nextImage, e);
         }
 
         // Przemieszanie nazw plików
@@ -303,10 +303,9 @@ public class MainActivityFragment extends Fragment {
                     MainActivityFragment.this.loadNextFlag();
                 }
             });
-        }
 
-        // Wariant animacji odkrywająca flagę
-        else {
+        } else {
+            // Wariant animacji odkrywająca flagę
             animator = ViewAnimationUtils.createCircularReveal(this.questionLinearLayout, centerX,centerY, 0, radius);
         }
 
