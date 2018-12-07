@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (this.preferencesChanged) {
             MainActivityFragment quizFragment = (MainActivityFragment) getSupportFragmentManager().findFragmentById(R.id.quizFragment);
-            quizFragment.updateQuessRows(PreferenceManager.getDefaultSharedPreferences(this));
+            quizFragment.updateGuessRows(PreferenceManager.getDefaultSharedPreferences(this));
             quizFragment.updateRegions(PreferenceManager.getDefaultSharedPreferences(this));
             quizFragment.resetQuiz();
             this.preferencesChanged = false;
